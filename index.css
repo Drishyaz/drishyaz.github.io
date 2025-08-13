@@ -1,8 +1,56 @@
 body {
   font-family: Consolas;
+  background-color: papayawhip;
 }
 p {
-  position:absolute;
-  top:50%;
-  left:50%;
+  text-align: center;
+}
+.command-box {
+  position: absolute;
+  right: 36px;
+  bottom: 48px;
+  border: 1px solid black;
+  border-radius: 8px;
+  width: 300px;
+  text-align: center;
+}
+#cmdIn {
+  margin: 0 16px;
+  padding: 4px 8px;
+  width:80%;
+  border-radius: 4px;
+}
+#cmdIn:focus {
+  outline-color: blueviolet;
+}
+button {
+  margin: 16px 24px;
+  padding: 4px 8px;
+  display: block;
+  width: 80%;
+  border-radius: 4px;
+  background-color: papayawhip;
+}
+button:hover {
+  border-color: blueviolet;
+  color: blueviolet;
+  cursor: pointer;
+}
+.menu {
+  width: 35%;
+}
+.menu ul {
+  display: flex;
+  justify-content: space-around;
+}
+.menu li {
+  list-style-type: none;
+}
+.menu a {
+  text-decoration: none;
+  color: black;
+}
+.menu a:hover {
+  text-decoration: underline;
+  color: blueviolet;
 }
